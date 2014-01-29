@@ -6,6 +6,7 @@ To Run
 ------------
 Compile all the .java files and run MainFrame.
 More levels can be added but they must fill the following requirements:
+
 1. The data must be represented by a 19 by 29 grid seperated by commas (no spaces)
 
 2. There must be 11's at all the corners
