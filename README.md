@@ -1,6 +1,6 @@
 Pacman-Replicated Game
 =====================
-Isaac Gluck, Michael Lim - APCS Pd.3  Mr. Zamansky
+Isaac Gluck, Michael Lim
 
 To Run
 ------------
