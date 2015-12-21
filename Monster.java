@@ -20,7 +20,7 @@ public class Monster {
 		dead = false;
 		this.color = color;
 		if (color == 1){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterRed.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterRed.png")).getImage();
 			xMonstCor = 10;
 			yMonstCor = 570;
 			arrayRow = 28;
@@ -28,7 +28,7 @@ public class Monster {
 			direction = 1;
 		}
 		if (color == 2){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterYellow.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterYellow.png")).getImage();
 			xMonstCor = 10;
 			yMonstCor = 10;
 			arrayRow = 0;
@@ -36,7 +36,7 @@ public class Monster {
 			direction = 4;
 		}
 		if (color == 3){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterPink.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterPink.png")).getImage();
 			xMonstCor = 370;
 			yMonstCor = 10;
 			arrayRow = 0;
@@ -44,7 +44,7 @@ public class Monster {
 			direction = 2;
 		}
 		if (color == 4){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterBlue.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterBlue.png")).getImage();
 			xMonstCor = 370;
 			yMonstCor = 570;
 			arrayRow = 28;
@@ -185,21 +185,21 @@ public class Monster {
 
 	public void changeColor(Pacman player){
 		if(player.getPower()){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterWeak.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterWeak.png")).getImage();
 		}
 		else if(color == 1){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterRed.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterRed.png")).getImage();
 		}
 		else if(color == 2){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterYellow.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterYellow.png")).getImage();
 			
 		}
 		else if(color == 3){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterPink.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterPink.png")).getImage();
 			
 		}
 		else if(color == 4){
-			monster = new ImageIcon(this.getClass().getResource("images/monsterBlue.png")).getImage();
+			monster = new ImageIcon(this.getClass().getResource("/images/monsterBlue.png")).getImage();
 		}
 
 	}

@@ -148,7 +148,7 @@ public class Board extends JPanel implements Runnable{
 
 		mainMenu = new JButton("Main Menu");
 		mainMenu.setBounds(155, 375, 100, 25);
-		winScreen = new ImageIcon(this.getClass().getResource("images/win.png")).getImage();
+		winScreen = new ImageIcon(this.getClass().getResource("/images/win.png")).getImage();
 
 		setUpBoard(1,3);
 
@@ -188,7 +188,7 @@ public class Board extends JPanel implements Runnable{
 	public void importLevel(String levelFile){
 		currentLevel = new int[29][19];
 		try{
-			Scanner scanner = new Scanner(new File("levels/"+levelFile));
+			Scanner scanner = new Scanner(new File("/levels/"+levelFile));
             scanner.useDelimiter("\n");
             String[] temp = new String[19];
             for(int j=0;j<29;j++) {
@@ -252,11 +252,11 @@ public class Board extends JPanel implements Runnable{
 
 		// Show lives with pacman pictures
 		if (lives==3)
-			pacLives = new ImageIcon(this.getClass().getResource("images/threeLives.png")).getImage();
+			pacLives = new ImageIcon(this.getClass().getResource("/images/threeLives.png")).getImage();
 		if (lives==2)
-			pacLives = new ImageIcon(this.getClass().getResource("images/twoLives.png")).getImage();
+			pacLives = new ImageIcon(this.getClass().getResource("/images/twoLives.png")).getImage();
 		if (lives==1)
-			pacLives = new ImageIcon(this.getClass().getResource("images/oneLife.png")).getImage();
+			pacLives = new ImageIcon(this.getClass().getResource("/images/oneLife.png")).getImage();
 		
 		String showScore = "Score: "+ player.score;
 
