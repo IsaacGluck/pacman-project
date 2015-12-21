@@ -18,7 +18,7 @@ public class LoginFile{
 
 	public void getInfo(){
 		try{
-			Scanner scanner = new Scanner(new File("users.txt"));
+			Scanner scanner = new Scanner(this.getClass().getResourceAsStream("users.txt"));
         	scanner.useDelimiter("\n");	
         	String[] temp = new String[4];
         	while (scanner.hasNext()) {

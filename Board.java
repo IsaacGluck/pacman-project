@@ -188,7 +188,7 @@ public class Board extends JPanel implements Runnable{
 	public void importLevel(String levelFile){
 		currentLevel = new int[29][19];
 		try{
-			Scanner scanner = new Scanner(new File("/levels/"+levelFile));
+			Scanner scanner = new Scanner(this.getClass().getResourceAsStream("levels/"+levelFile));
             scanner.useDelimiter("\n");
             String[] temp = new String[19];
             for(int j=0;j<29;j++) {
