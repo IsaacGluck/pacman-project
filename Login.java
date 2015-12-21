@@ -70,7 +70,7 @@ public class Login extends JPanel{
 		guest.setBounds(155, 475, 100, 25);
 		add(guest);
 
-		credits = new JLabel("<html> <p align=\"center\"; style=\"font-size:13.5px\"><b>Created by:</b></p> <p align=\"center\"; style=\"font-size:11px\">Isaac Gluck & Michael Lim</p>");
+		credits = new JLabel("<html> <p align=\"center\"><b>Created by: Isaac Gluck</b></p>");
 		credits.setForeground(Color.red);
 		credits.setBounds(120, 500, 200, 125);
 		add(credits);

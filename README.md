@@ -1,6 +1,6 @@
 Pacman-Replicated Game
 =====================
-Isaac Gluck, Michael Lim
+Isaac Gluck
 
 To Run
 ------------
