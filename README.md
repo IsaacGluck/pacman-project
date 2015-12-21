@@ -5,6 +5,8 @@ Isaac Gluck
 To Run
 ------------
 
+Download just the jar here: [Pacman Jar](https://www.dropbox.com/sh/cu2sphjr6zkodre/AAAKezgyYh8GlGgLz5H8Ay-ca/pacman.jar?dl=0)
+
 Double-click the pacman.jar file to play the game!
 
 
