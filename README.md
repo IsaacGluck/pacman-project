@@ -16,9 +16,14 @@ More levels can be added but they must fill the following requirements:
 
 3. 1's and 11's are treated as fruits, 21 is a powerup, 2 is a wall, 0 is free space
 
-4. Save the file in the levels folder and add to the array levels in Board.java --> {"exampleLevel.txt"}
+4. Save the file in the levels folder ("exampleLevel.txt") and add to the array `levels` in Board.java
 
-5.
+5. To recompile the new level(s) into a jar file, use the terminal to navigate to the *pacman-project* directory
+
+6. Once in the directory run the following command:
+```
+jar cfm pacman.jar manifest.txt *.java *.class users.txt images/*.png levels/*.txt
+```
 
 Introduction
 ------------
@@ -39,11 +44,11 @@ How to Play
 -----------
 1. The main rule is simple: eat as many fruits as you can before you die.
 
-2. If you eat fruits, each fruit gives you 1 point. If ghosts eat you, you lose a life (not good).
+2. When you eat fruits, they give you 1 point (good). If a ghost eats you, you lose a life (not good).
 
-3. If you eat a super fruit, you turn invincible for a several seconds. While you are in super pacman mode, you may eat monsters to gain extra points.
+3. If you eat a super fruit, you turn invincible for a several seconds (better). While you are in super pacman mode, you may eat monsters to gain extra points (best).
 
-4. After your super mode is over, monster will regenerate in the screen.
+4. After your super mode is over, the monsters you ate will regenerate in the screen and all monsters will once again ruthlessly chase you.
 
 
 
