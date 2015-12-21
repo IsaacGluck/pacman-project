@@ -6,6 +6,10 @@ import javax.swing.SwingUtilities;
 
 public class MainFrame extends JFrame implements ActionListener{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -885580489165096355L;
 	private JPanel pane; //main board
 	private Board gameBoard; //game board
 	private Login loginForm;
@@ -111,7 +115,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run(){
-				MainFrame f = new MainFrame();
+				new MainFrame();
 			}
 		});
 	}

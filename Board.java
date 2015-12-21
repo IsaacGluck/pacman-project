@@ -1,5 +1,3 @@
-import java.lang.*;
-import java.io.*;
 import java.util.*;
 import java.awt.*;
 import java.awt.Graphics;
@@ -15,6 +13,10 @@ import javax.swing.KeyStroke;
 
 
 public class Board extends JPanel implements Runnable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6512715596441462556L;
 	//  Coordinates for creating the maze
 	private double xcor;
 	private double ycor;
@@ -52,7 +54,6 @@ public class Board extends JPanel implements Runnable{
 	private boolean winSequence;
 	private int winCounter;
 	private boolean showLives = false;
-	private boolean deathMessage = false;
 	private boolean levelUp = false;
 	private Image winScreen;
 
@@ -61,6 +62,10 @@ public class Board extends JPanel implements Runnable{
 	
 
 	class MoveRight extends AbstractAction{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = -7307727927346233533L;
 		public MoveRight(){
 			putValue(NAME, "moveRight");
 			putValue(SHORT_DESCRIPTION, "Move right.");
@@ -71,6 +76,10 @@ public class Board extends JPanel implements Runnable{
 		}
 	}
 	class MoveLeft extends AbstractAction{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = -6577605768388189590L;
 		public MoveLeft(){
 			putValue(NAME, "moveLeft");
 			putValue(SHORT_DESCRIPTION, "Move left.");
@@ -81,6 +90,10 @@ public class Board extends JPanel implements Runnable{
 		}
 	}
 	class MoveUp extends AbstractAction{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 98945696041142724L;
 		public MoveUp(){
 			putValue(NAME, "moveUp");
 			putValue(SHORT_DESCRIPTION, "Move up.");
@@ -91,6 +104,10 @@ public class Board extends JPanel implements Runnable{
 		}
 	}
 	class MoveDown extends AbstractAction{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1494733363758292840L;
 		public MoveDown(){
 			putValue(NAME, "moveDown");
 			putValue(SHORT_DESCRIPTION, "Move down.");
@@ -101,6 +118,10 @@ public class Board extends JPanel implements Runnable{
 		}
 	}
 	class PauseGame extends AbstractAction{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 7465314020514651973L;
 		public PauseGame(){
 			putValue(NAME, "pause");
 			putValue(SHORT_DESCRIPTION, "Pause the game.");
@@ -112,6 +133,10 @@ public class Board extends JPanel implements Runnable{
 		}
 	}
 	class QuitGame extends AbstractAction{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1605500690089626784L;
 		public QuitGame(){
 			putValue(NAME, "quit");
 			putValue(SHORT_DESCRIPTION, "Quit the game.");
@@ -178,7 +203,6 @@ public class Board extends JPanel implements Runnable{
 		this.lives = lives;
 		importLevel(levels[level-1]);
 		player.setScore(0);
-		deathMessage = false;
 		allowPlay = true;
 		pause = true;
 		winSequence = false;

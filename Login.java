@@ -1,13 +1,12 @@
-import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.event.ActionEvent;
 import javax.swing.*;
-import javax.swing.Icon;
 
 public class Login extends JPanel{
-	private String username, password;
-	private int currentLvl, highScore;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4303526958373197815L;
 	private JLabel uPrompt, pPrompt, gPrompt, or, message, logo, credits;
 	protected JTextField usernameInput;
 	protected JPasswordField passwordInput;

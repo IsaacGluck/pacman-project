@@ -1,21 +1,23 @@
 import java.io.*;
 import java.util.*;
-import java.lang.*;
 
 public class LoginFile{
 	private String username, password;
 	private int level, highscore;
+	@SuppressWarnings("rawtypes")
 	private ArrayList[] list = new ArrayList[4];
+//	private List<List<Object>> list = new ArrayList<List<Object>>(4);
 	protected int[][] currentLevel;
 
 	public LoginFile(){
 		for(int i = 0; i<4; i++){
-			list[i] = new ArrayList();
+			list[i] = new ArrayList<Object>();
 		}
 		getInfo();
 		currentLevel = new int[29][19];
 	}
 
+	@SuppressWarnings("unchecked")
 	public void getInfo(){
 		try{
 			Scanner scanner = new Scanner(this.getClass().getResourceAsStream("users.txt"));
@@ -71,6 +73,7 @@ public class LoginFile{
 		return highscore;
 	} 
 
+	@SuppressWarnings("unchecked")
 	public void createNew(String username, String password, int level, int score) {
 		list[0].add(username);
 		list[1].add(password);
@@ -79,6 +82,7 @@ public class LoginFile{
 		exportAll();
 	}
 
+	@SuppressWarnings("unchecked")
 	public void setRecord(String user, int score, int level){
 		int index = -1;
 		for (int i = 0; i< list[0].size(); i++){
