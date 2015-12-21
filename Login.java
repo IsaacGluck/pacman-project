@@ -27,7 +27,7 @@ public class Login extends JPanel{
 	}
 
 	public void setUpPage(){
-		Icon logoIcon = new ImageIcon(this.getClass().getResource("/images/Logo.png")).getImage();
+		ImageIcon logoIcon = new ImageIcon(this.getClass().getResource("/images/Logo.png")).getImage();
 		logo = new JLabel(logoIcon);
 		logo.setBounds(57, 50, 300, 150);
 		add(logo);	
