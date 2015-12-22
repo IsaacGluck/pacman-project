@@ -6,7 +6,6 @@ public class LoginFile{
 	private int level, highscore;
 	@SuppressWarnings("rawtypes")
 	private ArrayList[] list = new ArrayList[4];
-//	private List<List<Object>> list = new ArrayList<List<Object>>(4);
 	protected int[][] currentLevel;
 
 	public LoginFile(){
@@ -20,7 +19,7 @@ public class LoginFile{
 	@SuppressWarnings("unchecked")
 	public void getInfo(){
 		try{
-			Scanner scanner = new Scanner(this.getClass().getResourceAsStream("users.txt"));
+			Scanner scanner = new Scanner(this.getClass().getResourceAsStream(".users.txt"));
         	scanner.useDelimiter("\n");	
         	String[] temp = new String[4];
         	while (scanner.hasNext()) {
@@ -101,7 +100,7 @@ public class LoginFile{
 
 	public void exportAll(){
 		try {
-			PrintWriter writer = new PrintWriter("users.txt", "UTF-8");
+			PrintWriter writer = new PrintWriter(".users.txt", "UTF-8");
 			int n = 0;
 			while(n<list[0].size()){
 				String s = new String();
